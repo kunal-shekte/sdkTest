@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@react-native/new-app-screen": "0.86.0",
-    "appsairpush-react-native": "file:../appsairpush-sdk/appsairpush-react-native-0.1.12.tgz",
+    "appsairpush-react-native": "^0.1.13",
     "react": "19.2.3",
     "react-native": "0.86.0",
     "react-native-fs": "^2.20.0",

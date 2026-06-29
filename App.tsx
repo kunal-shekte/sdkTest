@@ -17,7 +17,7 @@ function App() {
 
   return (
     <SafeAreaProvider>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar barStyle="dark-content" />ß
       <AppContent />
     </SafeAreaProvider>
   );
@@ -27,7 +27,7 @@ function AppContent() {
   useSafeAreaInsets();
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>This is base app for iOS | 25 Jun 07:40</Text>
+      <Text style={styles.text}>This is base app 2.0 public version | 26 Jun 17:27</Text>
     </View>
   );
 }
