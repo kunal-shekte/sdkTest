@@ -1,0 +1,111 @@
+07-14 15:06:28.944 15777 15777 I AppsAirPush: [bundleLoader] ========== getJSBundleFile called ==========
+
+07-14 15:06:28.946 15777 15777 I AppsAirPush: [bundleLoader] Binary version — current: "5.3" | last: ""
+
+07-14 15:06:28.947 15777 15777 I AppsAirPush: [bundleLoader] OTA dir exists: false | OTA bundle exists: false | version_name.txt exists: false
+
+07-14 15:06:28.947 15777 15777 I AppsAirPush: [bundleLoader] Binary version changed ("" → "5.3") — wiping OTA and resetting counter
+
+07-14 15:06:28.947 15777 15777 I AppsAirPush: [bundleLoader] Loading embedded bundle (binary version reset)
+
+07-14 15:06:37.003 15777 15989 I AppsAirPush: [bundleLoader] ========== getJSBundleFile called ==========
+
+07-14 15:06:37.004 15777 15989 I AppsAirPush: [bundleLoader] Binary version — current: "5.3" | last: "5.3"
+
+07-14 15:06:37.005 15777 15989 I AppsAirPush: [bundleLoader] OTA dir exists: false | OTA bundle exists: false | version_name.txt exists: false
+
+07-14 15:06:37.010 15777 15989 I AppsAirPush: [bundleLoader] Crash counter: 0 → 1 (threshold: 2)
+
+07-14 15:06:37.010 15777 15989 I AppsAirPush: [bundleLoader] No OTA bundle found — loading embedded bundle, counter reset to 0
+
+07-14 15:06:38.646 15777 15990 I AppsAirPush: [native] Native app version: 5.3
+
+07-14 15:06:39.259 15777 15990 I AppsAirPush: [crashGuard] Crash counter reset: 0 → 0 (JS booted successfully)
+
+07-14 15:06:46.524 15777 15990 I AppsAirPush: [unzip] Starting unzip: /data/user/0/com.tvscs.tvscreditapp/files/ota_tmp.zip → /data/user/0/com.tvscs.tvscreditapp/files/ota
+
+07-14 15:06:46.525 15777 15990 I AppsAirPush: [unzip] Created destination directory
+
+07-14 15:06:50.393 15777 15990 I AppsAirPush: [unzip] Unzip complete — extracted 275 files
+
+07-14 15:06:57.935 16117 16117 I AppsAirPush: [bundleLoader] ========== getJSBundleFile called ==========
+
+07-14 15:06:57.939 16117 16117 I AppsAirPush: [bundleLoader] Binary version — current: "5.3" | last: "5.3"
+
+07-14 15:06:57.939 16117 16117 I AppsAirPush: [bundleLoader] OTA dir exists: true | OTA bundle exists: true | version_name.txt exists: true
+
+07-14 15:06:57.944 16117 16117 I AppsAirPush: [bundleLoader] Crash counter: 0 → 1 (threshold: 2)
+
+07-14 15:06:57.944 16117 16117 I AppsAirPush: [bundleLoader] Loading OTA bundle: /data/user/0/com.tvscs.tvscreditapp/files/ota/main.jsbundle (6641547 bytes)
+
+07-14 15:07:05.245 16117 16245 I AppsAirPush: [bundleLoader] ========== getJSBundleFile called ==========
+
+07-14 15:07:05.248 16117 16245 I AppsAirPush: [bundleLoader] Binary version — current: "5.3" | last: "5.3"
+
+07-14 15:07:05.248 16117 16245 I AppsAirPush: [bundleLoader] OTA dir exists: true | OTA bundle exists: true | version_name.txt exists: true
+
+07-14 15:07:05.256 16117 16245 I AppsAirPush: [bundleLoader] Crash counter: 1 → 2 (threshold: 2)
+
+07-14 15:07:05.256 16117 16245 W AppsAirPush: [bundleLoader] ⚠️ CRASH THRESHOLD REACHED — blacklisting and wiping OTA bundle
+
+07-14 15:07:05.260 16117 16245 I AppsAirPush: [reportCrash] Reporting crash to server — appId=saathi-1779256749748, version=v2, nativeVersion=5.3
+
+07-14 15:07:05.264 16117 16245 I AppsAirPush: [bundleLoader] Blacklisted version: "v2"
+
+07-14 15:07:05.264 16117 16245 I AppsAirPush: [bundleLoader] Deleted version_name.txt
+
+07-14 15:07:05.264 16117 16245 I AppsAirPush: [bundleLoader] Deleted ota_installed.txt flag
+
+07-14 15:07:05.286 16117 16245 I AppsAirPush: [bundleLoader] OTA wiped, counter reset to 0 — loading embedded bundle
+
+07-14 15:07:06.098 16117 16262 I AppsAirPush: [reportCrash] Server responded with status: 200
+
+07-14 15:07:07.143 16117 16246 I AppsAirPush: [native] Native app version: 5.3
+
+07-14 15:07:07.815 16117 16246 I AppsAirPush: [crashGuard] Crash counter reset: 0 → 0 (JS booted successfully)
+
+07-14 15:07:17.087 16117 16246 I AppsAirPush: [unzip] Starting unzip: /data/user/0/com.tvscs.tvscreditapp/files/ota_tmp.zip → /data/user/0/com.tvscs.tvscreditapp/files/ota
+
+07-14 15:07:17.088 16117 16246 I AppsAirPush: [unzip] Created destination directory
+
+07-14 15:07:18.923 16117 16246 I AppsAirPush: [unzip] Unzip complete — extracted 275 files
+
+07-14 15:07:27.785 16303 16303 I AppsAirPush: [bundleLoader] ========== getJSBundleFile called ==========
+
+07-14 15:07:27.788 16303 16303 I AppsAirPush: [bundleLoader] Binary version — current: "5.3" | last: "5.3"
+
+07-14 15:07:27.789 16303 16303 I AppsAirPush: [bundleLoader] OTA dir exists: true | OTA bundle exists: true | version_name.txt exists: true
+
+07-14 15:07:27.807 16303 16303 I AppsAirPush: [bundleLoader] Crash counter: 0 → 1 (threshold: 2)
+
+07-14 15:07:27.807 16303 16303 I AppsAirPush: [bundleLoader] Loading OTA bundle: /data/user/0/com.tvscs.tvscreditapp/files/ota/main.jsbundle (6651741 bytes)
+
+07-14 15:07:34.229 16303 16438 I AppsAirPush: [bundleLoader] ========== getJSBundleFile called ==========
+
+07-14 15:07:34.231 16303 16438 I AppsAirPush: [bundleLoader] Binary version — current: "5.3" | last: "5.3"
+
+07-14 15:07:34.231 16303 16438 I AppsAirPush: [bundleLoader] OTA dir exists: true | OTA bundle exists: true | version_name.txt exists: true
+
+07-14 15:07:34.234 16303 16438 I AppsAirPush: [bundleLoader] Crash counter: 1 → 2 (threshold: 2)
+
+07-14 15:07:34.234 16303 16438 W AppsAirPush: [bundleLoader] ⚠️ CRASH THRESHOLD REACHED — blacklisting and wiping OTA bundle
+
+07-14 15:07:34.236 16303 16438 I AppsAirPush: [reportCrash] Reporting crash to server — appId=saathi-1779256749748, version=v1, nativeVersion=5.3
+
+07-14 15:07:34.239 16303 16438 I AppsAirPush: [bundleLoader] Blacklisted version: "v1"
+
+07-14 15:07:34.239 16303 16438 I AppsAirPush: [bundleLoader] Deleted version_name.txt
+
+07-14 15:07:34.239 16303 16438 I AppsAirPush: [bundleLoader] Deleted ota_installed.txt flag
+
+07-14 15:07:34.256 16303 16438 I AppsAirPush: [bundleLoader] OTA wiped, counter reset to 0 — loading embedded bundle
+
+07-14 15:07:35.951 16303 16439 I AppsAirPush: [native] Native app version: 5.3
+
+07-14 15:07:36.175 16303 16455 I AppsAirPush: [reportCrash] Server responded with status: 200
+
+07-14 15:07:36.369 16303 16439 I AppsAirPush: [crashGuard] Crash counter reset: 0 → 0 (JS booted successfully)
+
+
+
+https://dtvg1vybftt4z.cloudfront.net/bundle/kunalshekte24@gmail.com/sdktest-1781579110299/android/1783944661017-bundle.zip

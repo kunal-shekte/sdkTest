@@ -6,19 +6,38 @@ import com.facebook.react.ReactApplication
 import com.facebook.react.ReactHost
 import com.facebook.react.ReactNativeApplicationEntryPoint.loadReactNative
 import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
-import airpush.AppsAirPushModule
+import airpush.AppsAirPushBundleLoader
+import com.facebook.react.common.annotations.UnstableReactNativeAPI
+import com.facebook.react.defaults.DefaultComponentsRegistry
+import com.facebook.react.defaults.DefaultReactHostDelegate
+import com.facebook.react.defaults.DefaultTurboModuleManagerDelegate
+import com.facebook.react.fabric.ComponentFactory
+import com.facebook.react.runtime.ReactHostImpl
 
 class MainApplication : Application(), ReactApplication {
 
+  @OptIn(UnstableReactNativeAPI::class)
   override val reactHost: ReactHost by lazy {
-    getDefaultReactHost(
-      context = applicationContext,
-      packageList =
-        PackageList(this).packages.apply {
-          // Packages that cannot be autolinked yet can be added manually here, for example:
-          // add(MyReactNativePackage())
-        },
-      jsBundleFilePath = AppsAirPushModule.getJSBundleFile(applicationContext)
+    val packages = PackageList(this).packages.apply {
+      // Keep packages that your app adds manually here.
+    }
+  
+    val componentFactory = ComponentFactory()
+    DefaultComponentsRegistry.register(componentFactory)
+  
+    val delegate = DefaultReactHostDelegate(
+      jsMainModulePath = "index",
+      jsBundleLoader = AppsAirPushBundleLoader.create(applicationContext),
+      reactPackages = packages,
+      turboModuleManagerDelegateBuilder = DefaultTurboModuleManagerDelegate.Builder(),
+    )
+  
+    ReactHostImpl(
+      applicationContext,
+      delegate,
+      componentFactory,
+      true,
+      BuildConfig.DEBUG,
     )
   }
 

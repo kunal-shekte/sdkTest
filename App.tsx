@@ -36,22 +36,19 @@ function App() {
   useEffect(() => {
     let modalShownAt = 0;
 
-    AppsAirPush.sync(
-      {appId: process.env.appId},
-      download => {
-        if (!modalShownAt) {
-          modalShownAt = Date.now();
-          setDownloading(true);
-        }
-        // Smoothly animate to the new progress value
-        Animated.timing(animValue, {
-          toValue: download.progress,
-          duration: 300,
-          easing: Easing.out(Easing.ease),
-          useNativeDriver: false,
-        }).start();
-      },
-    ).then(() => {
+    AppsAirPush.sync({ appId: 'sdktest-1781579110299' }, download => {
+      if (!modalShownAt) {
+        modalShownAt = Date.now();
+        setDownloading(true);
+      }
+      // Smoothly animate to the new progress value
+      Animated.timing(animValue, {
+        toValue: download.progress,
+        duration: 300,
+        easing: Easing.out(Easing.ease),
+        useNativeDriver: false,
+      }).start();
+    }).then(() => {
       // Ensure modal stays visible for at least 1.5s
       const elapsed = Date.now() - modalShownAt;
       const minDisplay = 1500;
@@ -164,7 +161,7 @@ function AppContent() {
   useSafeAreaInsets();
   return (
     <View style={styles.container}>
-      <Image source={require('./assets/logo.png')} style={styles.logo} />
+      {/* <Image source={require('./assets/logo.png')} style={styles.logo} /> */}
       <Text style={styles.text}>
         This is base app 3.0 android v1 | Prod AppsAirPush | 6 Jul 19:07
       </Text>

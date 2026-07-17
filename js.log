@@ -1,0 +1,24 @@
+[appsairpush] [sync] ========== OTA Sync Started ==========
+[appsairpush] [init] Starting SDK init...
+[appsairpush] [init] Config: appId=saathi-1779256749748, platform=android
+[appsairpush] [init] Checking first-launch flag...
+[appsairpush] [restart] Checking first-launch flag at: /data/user/0/com.tvscs.tvscreditapp/files/ota_installed.txt | exists: false
+[appsairpush] [restart] No first-launch flag — normal boot
+[appsairpush] [init] Saving app ID...
+[appsairpush] [version] Saved app_id: "saathi-1779256749748"
+[appsairpush] [init] Scheduling crash counter reset in 500ms...
+[appsairpush] [init] SDK initialized successfully ✅
+[appsairpush] [checkForUpdate] Reading blacklisted versions...
+[appsairpush] [version] Blacklisted versions: [v2, v1]
+[appsairpush] [checkForUpdate] Calling server to check for update...
+[appsairpush] [version] No version_name.txt found, returning NO_ID
+[appsairpush] [native] Native app version: 5.3
+[appsairpush] [http] Checking update: https://appsairpush.com/api/v1/bundle/latest?platform=android&appId=saathi-1779256749748&nativeVersion=5.3&blacklisted_versions=v2%2Cv1
+[appsairpush] [http] Current bundle: NO_ID
+[appsairpush] [crashGuard] Launch marked as successful — crash counter reset to 0
+[appsairpush] [http] Server responded with status: 400
+[appsairpush] [http] Server returned non-OK status: 400
+[appsairpush] [checkForUpdate] Result: hasUpdate=false
+[appsairpush] [sync] No OTA update available — sync complete
+[appsairpush] [sync] ========== OTA Sync Finished ==========
+ 
